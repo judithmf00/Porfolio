@@ -60,9 +60,8 @@ body {
 }
 
 .containerMain {
-  background-color: rgba(55, 55, 55, 0.8470588235);
   border-radius: 15px;
-  padding: 15px;
+  padding: 10px 25px;
   height: 95%;
   font-family: "Teachers";
   color: #fefefe;
