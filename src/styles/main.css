@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1A1A1A;
+  height: 100vh;
+}
+
+.containerContact {
+  background-color: rgba(55, 55, 55, 0.8470588235);
+  border-radius: 15px;
+  padding: 15px;
+  height: 95%;
+  font-family: "Teachers";
+  color: #fefefe;
+}
+.containerContact figure {
+  margin-top: 15px;
+}
+.containerContact figure img {
+  width: 100px;
+  border-radius: 100px;
+}
+.containerContact h2 {
+  font-family: "Teachers", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+.containerContact button {
+  background: linear-gradient(to bottom right, #00CCBE, #A435F0);
+  margin: 25px 0px;
+  padding: 3px 30px;
+  border-radius: 5px;
+}
+.containerContact .title {
+  margin-top: 20px;
+}
+.containerContact .title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 8px;
+  background: linear-gradient(to bottom right, #00CCBE, #A435F0);
+}
+.containerContact div {
+  display: flex;
+  align-items: center;
+  margin: 6px 0px;
+  width: 100%;
+}
+.containerContact div i {
+  margin-right: 15px;
+}
+
+.containerMain {
+  background-color: rgba(55, 55, 55, 0.8470588235);
+  border-radius: 15px;
+  padding: 15px;
+  height: 95%;
+  font-family: "Teachers";
+  color: #fefefe;
+}
+
+/*# sourceMappingURL=main.css.map */

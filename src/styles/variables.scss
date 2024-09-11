@@ -1,0 +1,16 @@
+// Colores
+$black: #1A1A1A;
+$white: #fefefe;
+$purple: #A435F0; 
+$blue: #00CCBE;
+$green: #81C784;
+$grey: #373737d8;
+
+$gradient: linear-gradient(to bottom right, $blue, $purple);
+
+// Fuentes
+@mixin font($font-weight, $font-size) {
+    font-family: "Teachers", sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
