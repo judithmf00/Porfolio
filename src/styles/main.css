@@ -67,4 +67,35 @@ body {
   color: #fefefe;
 }
 
+.containerAboutme {
+  margin: 10px;
+}
+.containerAboutme h3 {
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+  font-family: "Teachers", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+.containerAboutme h3::before, .containerAboutme h3::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 300px;
+  background: linear-gradient(to bottom right, #00CCBE, #A435F0);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.containerAboutme h3::after {
+  right: 0;
+}
+.containerAboutme h3::before {
+  left: 0;
+}
+.containerAboutme p {
+  padding: 0px 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
