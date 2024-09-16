@@ -3,8 +3,8 @@ import React from 'react';
 export default function Aboutme() {
   return (
     <div className='containerAboutme'>
-      <h3 className="text-2xl font-bold mb-4">Sobre mí</h3>
-      <p className="text-base leading-relaxed">
+      <h3 className="text-2xl font-bold mb-4 titlePage">Sobre mí</h3>
+      <p className="text-lg ">
         <i className="fa-solid fa-laptop-code text-purple-300 mr-1"></i>
         <span className="font-bold italic">Desarrolladora web</span> recién titulada en <span className="italic">Desarrollo de Aplicaciones Web</span>, y también con un <span className="font-bold italic">Grado Medio </span> en <span className="italic">Sistemas Microinformáticos y Redes (SMR)</span>.<br /><br />
         Después de cuatro años de formación, estoy lista para <span className="font-bold italic">crecer profesionalmente</span> en el mundo del desarrollo.<br /><br />

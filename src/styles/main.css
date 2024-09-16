@@ -12,6 +12,45 @@ body {
   height: 100vh;
 }
 
+* {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title, .titlePage {
+  margin-top: 20px;
+}
+.title::after, .titlePage::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 8px;
+  background: linear-gradient(to bottom right, #00CCBE, #A435F0);
+}
+
+.titlePage {
+  font-size: 3.5vh;
+}
+.titlePage::after {
+  margin-top: 8px;
+}
+
+/* Estilos barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.2588235294);
+}
+
+/* Estilo de la "thumb" */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, #00CCBE, #A435F0);
+  border-radius: 6px;
+}
+
 .containerContact {
   background-color: rgba(55, 55, 55, 0.8470588235);
   border-radius: 15px;
@@ -38,16 +77,9 @@ body {
   padding: 3px 30px;
   border-radius: 5px;
 }
-.containerContact .title {
-  margin-top: 20px;
-}
-.containerContact .title::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-  margin-bottom: 8px;
-  background: linear-gradient(to bottom right, #00CCBE, #A435F0);
+.containerContact button:hover {
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 .containerContact div {
   display: flex;
@@ -70,32 +102,98 @@ body {
 .containerAboutme {
   margin: 10px;
 }
-.containerAboutme h3 {
-  margin-bottom: 10px;
-  position: relative;
-  text-align: center;
-  font-family: "Teachers", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-}
-.containerAboutme h3::before, .containerAboutme h3::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 300px;
-  background: linear-gradient(to bottom right, #00CCBE, #A435F0);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.containerAboutme h3::after {
-  right: 0;
-}
-.containerAboutme h3::before {
-  left: 0;
-}
 .containerAboutme p {
   padding: 0px 20px;
+}
+
+.containerProjects {
+  margin: 10px;
+  height: 80vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.containerProjects .project {
+  border: 1px solid #fefefe;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom right, rgba(51, 51, 51, 0.6117647059), rgba(240, 240, 240, 0.4117647059));
+  width: 80%;
+  position: relative;
+}
+.containerProjects .project h4 {
+  font-size: 2.6vh;
+}
+.containerProjects .project .buttonsProjects {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.containerProjects .project .buttonsProjects > i {
+  background-color: #A435F0;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0.5rem;
+  font-size: 25px;
+}
+.containerProjects .project .buttonsProjects > i:hover {
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.containerProjects .project .containerProject {
+  padding: 10px;
+}
+.containerProjects .project .containerProject figure {
+  width: 30%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.containerProjects .project .containerProject figure img {
+  width: 100%;
+  border-radius: 5px;
+  transition: linear 0.2s;
+}
+.containerProjects .project .containerProject figure img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.containerProjects .project .containerProject p {
+  font-size: 2.1vh;
+}
+.containerProjects .project .containerProject div {
+  width: 70%;
+  padding: 0px 10px;
+}
+.containerProjects .project .containerProject div aside p {
+  padding-top: 10px;
+  color: #00CCBE;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+.containerProjects .project .containerProject div aside div {
+  display: flex;
+  gap: 2rem;
+}
+.containerProjects .project .containerProject div aside div i {
+  font-size: 2rem;
+}
+.containerProjects .project .containerProject div aside div img {
+  width: 4vh;
+  height: 4vh;
+}
+
+li {
+  font-size: 2.5vh;
+}
+li a:hover {
+  color: #A435F0;
 }
 
 /*# sourceMappingURL=main.css.map */

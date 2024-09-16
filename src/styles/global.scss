@@ -8,6 +8,42 @@ body{
     background-color: $black;
     height: 100vh;
 }
-// div{
-//     @include font(800,24px)
-// }
+
+
+*{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title,.titlePage{
+    margin-top: 20px;
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        margin-bottom: 8px;
+        background: $gradient
+    }
+}
+.titlePage{
+    font-size: 3.5vh;
+    &::after{
+        margin-top: 8px;
+    }
+}
+
+/* Estilos barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+    background: #f1f1f142; 
+}
+
+/* Estilo de la "thumb" */
+::-webkit-scrollbar-thumb {
+    background: $gradient; 
+    border-radius: 6px;
+}
