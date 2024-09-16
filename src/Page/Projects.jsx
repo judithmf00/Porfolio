@@ -10,6 +10,7 @@ export default function Projects() {
           <div className='flex containerProject'>
               <figure>
                 <img src="/img/contadorCalorias.PNG" alt="Página contador de calorías" />
+                <i className="fas fa-eye"></i>
               </figure>
               <div>
                 <p className='project__description'>
@@ -34,8 +35,8 @@ export default function Projects() {
               </div>
           </div>
           <div className="buttonsProjects">
-            <i className="fab fa-github" style={{ color: '#fefefe' }}></i>
-            <i className="fab fa-figma" style={{ color: '#fefefe' }}></i>
+            <a href="https://github.com/judithmf00/contadorCalorias"><i className="fab fa-github" style={{ color: '#fefefe' }}></i></a>
+            <a href=""><i className="fab fa-figma" style={{ color: '#fefefe' }}></i></a>
           </div>
           
         </article>
@@ -65,8 +66,8 @@ export default function Projects() {
               </div>
           </div>
           <div className="buttonsProjects">
-            <i className="fab fa-github" style={{ color: '#fefefe' }}></i>
-            <i className="fab fa-figma" style={{ color: '#fefefe' }}></i>
+            <a href="https://github.com/judithmf00/calculadoraComandas"><i className="fab fa-github" style={{ color: '#fefefe' }}></i></a>
+            <a href=""><i className="fab fa-figma" style={{ color: '#fefefe' }}></i></a>
           </div>
         </article>
         <article className='project'>
@@ -90,10 +91,6 @@ export default function Projects() {
                   </div>
                 </aside>
               </div>
-          </div>
-          <div className="buttonsProjects">
-            <i className="fab fa-github" style={{ color: '#fefefe' }}></i>
-            <i className="fab fa-figma" style={{ color: '#fefefe' }}></i>
           </div>
         </article>
         <article className='project'>
@@ -121,8 +118,7 @@ export default function Projects() {
               </div>
           </div>
           <div className="buttonsProjects">
-            <i className="fab fa-github" style={{ color: '#fefefe' }}></i>
-            <i className="fab fa-figma" style={{ color: '#fefefe' }}></i>
+            <a href="https://github.com/judithmf00/coctelesJavascriptApi"><i className="fab fa-github" style={{ color: '#fefefe' }}></i></a>
           </div>
         </article>
         <article className='project'>
@@ -150,8 +146,8 @@ export default function Projects() {
               </div>
           </div>
           <div className="buttonsProjects">
-            <i className="fab fa-github" style={{ color: '#fefefe' }}></i>
-            <i className="fab fa-figma" style={{ color: '#fefefe' }}></i>
+            <a href="https://github.com/judithmf00/shopGuitar"><i className="fab fa-github" style={{ color: '#fefefe' }}></i></a>
+            <a href=""><i className="fab fa-figma" style={{ color: '#fefefe' }}></i></a>
           </div>
         </article>
       </section>

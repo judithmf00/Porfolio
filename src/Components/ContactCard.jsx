@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ContactCard() {
   return (
-    <section className='containerContact flex flex-col items-center '>
+    <section className='containerContact flex flex-col items-center'>
         <figure className='flex items-center justify-center'>
            <img src="/img/profile.jpeg" alt="Foto perfil" /> 
         </figure>
