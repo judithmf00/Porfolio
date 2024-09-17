@@ -39,7 +39,12 @@
         align-items: center;
         margin: 6px 0px;
         width: 100%;
+        
 
+        &:hover{
+            cursor: pointer;
+        }
+        
         i{
             margin-right: 15px;
         }

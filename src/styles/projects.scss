@@ -45,8 +45,11 @@
         }
         .containerProject{
             padding: 10px;
-            figure{
+            a{
                 width: 30%;
+            }
+            figure{
+                width: 100%;
                 border-radius: 5px;
                 overflow: hidden;
                 position: relative;
@@ -57,7 +60,7 @@
                     left: 50%;
                     transform: translate(-50%, -50%);
                     font-size: 0; 
-                    color: black;
+                    color: $white;
                     transition: font-size 0.3s ease, opacity 0.3s ease;
                     opacity: 0;
                 }
@@ -72,11 +75,11 @@
                     width: 100%;
                     border-radius: 5px;
                     transition: linear 0.2s;
-                    
+
                     &:hover{
                         transform: scale(1.2);
                         cursor: pointer;
-                        opacity: 0.5;
+                        opacity: 0.3;
                     }
                 }
             }
