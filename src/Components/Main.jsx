@@ -7,7 +7,7 @@ import Skills from '../Page/Skills';
 
 export default function Main() {
   return (
-    <div className='containerMain w-full'>
+    <div className='containerMain w-full p-4'>
         <NavBar/>
         <Routes>
             <Route path="/" element={<Navigate to="/aboutme"/>} />

@@ -1,5 +1,4 @@
 .containerProjects{
-    margin: 10px;
     height: 80vh;
     overflow: hidden;
     overflow-y: scroll;
@@ -8,32 +7,25 @@
         border: 1px solid $white;
         border-radius: 10px;
         margin: 10px;
-        padding: 10px 20px;
         background:linear-gradient(to bottom right, #3333339c, #f0f0f069);
-        width: 80%;
+        width: 90%;
         position: relative;
 
-        h4{
-            font-size: 2.6vh;
-        }
         .buttonsProjects{
             display: flex;
             align-items: center;
             text-align: center;
             position: absolute;
-            bottom: 0;
-            right: 0;
+            bottom: 1vw;
+            right: 1vw;
 
             & i{
                 background-color: $purple; 
-                width: 3rem; 
-                height: 3rem; 
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
                 margin: 0.5rem;
-                font-size: 25px;
 
                 &:hover{
                     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3); 
@@ -44,7 +36,6 @@
 
         }
         .containerProject{
-            padding: 10px;
             a{
                 width: 30%;
             }
@@ -114,4 +105,10 @@
         
     }
     
+}
+
+@media (max-width: 640px) { 
+    .containerProject a {
+        width: 100%;
+    }
 }

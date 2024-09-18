@@ -2,21 +2,16 @@
 .containerContact{
     background-color: $grey;
     border-radius: 15px;
-    padding: 15px;
     height: 95%;
     font-family: 'Teachers';
     color: $white;
-
+    
     figure{
         margin-top: 15px;
        img{
             width: 100px;
             border-radius: 100px;
         } 
-    }
-    
-    h2{
-        @include font(600,24px)
     }
 
     button{
@@ -35,16 +30,19 @@
     
 
     div{
-        display: flex;
-        align-items: center;
-        margin: 6px 0px;
         width: 100%;
-        
+
+        a{
+            display: flex;
+            align-items: center;
+        }
 
         &:hover{
             cursor: pointer;
+            color: $purple;
+            font-weight: 300;
         }
-        
+
         i{
             margin-right: 15px;
         }

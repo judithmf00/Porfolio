@@ -28,9 +28,6 @@ body {
   background: linear-gradient(to bottom right, #00CCBE, #A435F0);
 }
 
-.titlePage {
-  font-size: 3.5vh;
-}
 .titlePage::after {
   margin-top: 8px;
 }
@@ -54,7 +51,6 @@ body {
 .containerContact {
   background-color: rgba(55, 55, 55, 0.8470588235);
   border-radius: 15px;
-  padding: 15px;
   height: 95%;
   font-family: "Teachers";
   color: #fefefe;
@@ -65,11 +61,6 @@ body {
 .containerContact figure img {
   width: 100px;
   border-radius: 100px;
-}
-.containerContact h2 {
-  font-family: "Teachers", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
 }
 .containerContact button {
   background: linear-gradient(to bottom right, #00CCBE, #A435F0);
@@ -82,10 +73,16 @@ body {
   cursor: pointer;
 }
 .containerContact div {
+  width: 100%;
+}
+.containerContact div a {
   display: flex;
   align-items: center;
-  margin: 6px 0px;
-  width: 100%;
+}
+.containerContact div:hover {
+  cursor: pointer;
+  color: #A435F0;
+  font-weight: 300;
 }
 .containerContact div i {
   margin-right: 15px;
@@ -93,7 +90,6 @@ body {
 
 .containerMain {
   border-radius: 15px;
-  padding: 10px 25px;
   height: 95%;
   font-family: "Teachers";
   color: #fefefe;
@@ -101,13 +97,14 @@ body {
 
 .containerAboutme {
   margin: 10px;
+  height: 85%;
+  overflow-y: scroll;
 }
 .containerAboutme p {
   padding: 0px 20px;
 }
 
 .containerProjects {
-  margin: 10px;
   height: 80vh;
   overflow: hidden;
   overflow-y: scroll;
@@ -116,39 +113,29 @@ body {
   border: 1px solid #fefefe;
   border-radius: 10px;
   margin: 10px;
-  padding: 10px 20px;
   background: linear-gradient(to bottom right, rgba(51, 51, 51, 0.6117647059), rgba(240, 240, 240, 0.4117647059));
-  width: 80%;
+  width: 90%;
   position: relative;
-}
-.containerProjects .project h4 {
-  font-size: 2.6vh;
 }
 .containerProjects .project .buttonsProjects {
   display: flex;
   align-items: center;
   text-align: center;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 1vw;
+  right: 1vw;
 }
 .containerProjects .project .buttonsProjects i {
   background-color: #A435F0;
-  width: 3rem;
-  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   margin: 0.5rem;
-  font-size: 25px;
 }
 .containerProjects .project .buttonsProjects i:hover {
   box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-}
-.containerProjects .project .containerProject {
-  padding: 10px;
 }
 .containerProjects .project .containerProject a {
   width: 30%;
@@ -209,6 +196,11 @@ body {
   height: 4vh;
 }
 
+@media (max-width: 640px) {
+  .containerProject a {
+    width: 100%;
+  }
+}
 li {
   font-size: 2.5vh;
 }

@@ -7,10 +7,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className='flex items-center h-screen mx-5'>
-        <div className="w-1/10  h-full items-center flex">
+        <div className="  h-full items-center flex">
           <ContactCard />
         </div>
-        <div className="w-9/10 h-full">
+        <div className=" h-full">
           <Main />
         </div>
       </div>
